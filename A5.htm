@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us - </title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:25px;
+    text-align:center;
+    animation: fadeDown 1.5s ease;
+}
+
+/* Main Container */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease;
+}
+
+/* Title */
+.container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Content Layout */
+.about-content{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* Text Section */
+.text{
+    flex:1;
+    animation: slideLeft 1.5s ease;
+}
+
+.text p{
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+/* Image Section */
+.image{
+    flex:1;
+    overflow:hidden;
+    border-radius:10px;
+    animation: slideRight 1.5s ease;
+}
+
+.image img{
+    width:100%;
+    border-radius:10px;
+    transition: transform 0.5s;
+}
+
+.image img:hover{
+    transform: scale(1.1);
+}
+
+/* Features */
+.features{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.box{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+    transition: transform 0.3s;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+
+
+
+
+<table border="0" width="50%" height="25px">
+
+<!----Row1---->
+
+<tr>
+
+<th></th>
+
+<th></th>
+
+
+<th><a href="C:\Users\samru\OneDrive\Desktop\practice\a1.htm">Home</a> </th>
+<th> <a href="C:\Users\samru\OneDrive\Desktop\practice\project.htm">information</a> </th>
+
+
+
+<th> <a href="C:\Users\samru\OneDrive\Desktop\practice\A5.htm">About Us</a></th>
+
+<th><a href="C:\Users\samru\OneDrive\Desktop\practice\a3.htm">Contact Us</a></th>
+
+</tr>
+</table>
+
+
+<body>
+
+<header>
+    <h1>Royal Stay Hotel</h1>
+    <p>About Us</p>
+</header>
+
+<div class="container">
+
+<h2>Welcome Royal Stay Hotel</h2>
+
+<div class="about-content">
+
+    <div class="text">
+        <p>
+          Royal Stay Hotel provides luxury comfort and world-class hospitality.
+        Our hotel is designed to give you a relaxing stay with modern facilities
+        and professional service.
+        </p>
+
+        <p>
+        We focus on customer satisfaction, clean rooms, delicious food and 
+        peaceful environment for families, business travelers and tourists.
+        </p>
+    </div>
+
+    <div class="image">
+        <img src="C:\Users\samru\Downloads\1.jpeg" alt="Hotel Image">
+    </div>
+
+</div>
+
+<div class="features">
+
+    <div class="box">Luxury Rooms</div>
+    <div class="box">24/7 Service</div>
+    <div class="box">Free WiFi</div>
+    <div class="box">Restaurant</div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>© Royal Stay Hotel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
